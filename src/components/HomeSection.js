@@ -45,7 +45,6 @@ const HomeSection = () => {
                         Most common methods for designing websites that work well on desktop is responsive and adaptive design.
                     </p>
                 </div>
-
             </div>
         </div>
     )

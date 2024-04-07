@@ -5,7 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineMenu } from "react-icons/hi";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import HomeSection from './HomeSection';
+
 
 const Home = () => {
   const [displayNavbar, setDisplayNavbar] = useState(true);  //to display navbar state
@@ -72,7 +72,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <HomeSection />
     </>
   )
 }
