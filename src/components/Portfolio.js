@@ -9,7 +9,7 @@ const Portfolio = () => {
                 <div className='text-center'>
                     <span className='text-lg font-semibold text-orange-600'>Portfolio</span>
                     <h1 className='text-4xl font-semibold py-5'>My Amazing Works</h1>
-                    <p className='text-[17px] text-red-100'>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                    <p className='text-[17px] text-red-100 lg:mx-auto xl:max-w-[50%]'>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
                     <h2 className='text-lg font-semibold text-orange-600 py-6'>All</h2>
                 </div>
 

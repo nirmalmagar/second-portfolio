@@ -12,6 +12,9 @@ module.exports = {
       xl: "1200px",
       xxl: "1400px",
     },
+    fontFamily: {
+      courgette: ["Courgette", "cursive"],
+    },
     extend: {},
   },
   plugins: [],
