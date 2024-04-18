@@ -7,6 +7,10 @@ import PortfolioSection from './components/PortfolioSection';
 import Service from './components/Service';
 import ServiceSection from './components/ServiceSection';
 import ServiceGrid from './components/ServiceGrid';
+import Blog from './components/Blog';
+import BlogSubscribe from './components/BlogSubscribe';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -19,6 +23,10 @@ const App = () => {
       <Service />
       <ServiceSection />
       <ServiceGrid />
+      <Blog />
+      <BlogSubscribe />
+      <Contact />
+      <Footer />
     </>
   )
 }

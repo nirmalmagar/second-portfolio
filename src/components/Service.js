@@ -17,7 +17,7 @@ const Service = () => {
                         for designing websites that work well on desktop is responsive and adaptive design</p>
                 </div>
                 <div className='grid lgg:grid-cols-2 grid-cols-1 gap-4 lgg:mx-0 sm:mx-[10%] mx-1 mt-28'>
-                    <div className='bg-neutral-600 text-white py-16 rounded-2xl '>
+                    <div className='bg-neutral-600 hover:bg-neutral-700 duration-500 text-white py-16 rounded-2xl '>
                         <div className='grid grid-cols-3 sm:px-7 px-2'>
                             <div className='bg-no-repeat relative xxl:ml-7 lg:ml-3 ml-0 mt-4' style={{ backgroundImage: `url(${"../images/service/1.png"})` }}>
                                 <div className='absolute top-6 left-6 text-black'><FaDropbox className='w-12 h-12' /></div>
@@ -32,7 +32,7 @@ const Service = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='bg-neutral-600 text-white py-16 rounded-2xl '>
+                    <div className='bg-neutral-600 hover:bg-neutral-700 duration-500 text-white py-16 rounded-2xl '>
                         <div className='grid grid-cols-3 sm:px-7 px-2'>
                             <div className='bg-no-repeat relative xxl:ml-7 lg:ml-3 mt-4' style={{ backgroundImage: `url(${"../images/service/2.png"})` }}>
                                 <div className='absolute top-6 left-6 text-black'><FaReact className='w-12 h-12' /></div>
@@ -47,7 +47,7 @@ const Service = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='bg-neutral-600 text-white py-16 rounded-2xl '>
+                    <div className='bg-neutral-600 hover:bg-neutral-700 duration-500 text-white py-16 rounded-2xl '>
                         <div className='grid grid-cols-3 sm:px-7 px-2'>
                             <div className='bg-no-repeat relative xxl:ml-7 lg:ml-3 mt-4' style={{ backgroundImage: `url(${"../images/service/3.png"})` }}>
                                 <div className='absolute top-6 left-6 text-black'><FaRegAddressCard className='w-12 h-12' /></div>
@@ -62,7 +62,7 @@ const Service = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='bg-neutral-600 text-white py-16 rounded-2xl '>
+                    <div className='bg-neutral-600 hover:bg-neutral-700 duration-500 text-white py-16 rounded-2xl '>
                         <div className='grid grid-cols-3 sm:px-7 px-2'>
                             <div className='bg-no-repeat relative xxl:ml-7 lg:ml-3 mt-4' style={{ backgroundImage: `url(${"../images/service/4.png"})` }}>
                                 <div className='absolute top-6 left-6 text-black'><CgWebsite className='w-12 h-12' /></div>
