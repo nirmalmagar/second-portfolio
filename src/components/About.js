@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 const About = () => {
     return (
-        <div className='xxl:px-[15%] xl:px-[10%] px-[6%] overflow-x-hidden pb-20 bg-stone-800 ' >
+        <div className='xxl:px-[15%] xl:px-[10%] px-[6%] overflow-x-hidden pb-20 bg-stone-800' id='about' >
             <img className='absolute right-10' src="../images/bgStickers/1.png" alt="" />
             <div className='grid md:grid-cols-2 grid-cols-1 xl:gap-x-20 gap-x-10 text-white'>
                 <div className='lg:bg-cover bg-no-repeat bg-center h-[40rem] w-full md:w-full md:h-full relative' style={{ backgroundImage: `url(${"../images/about/aboutBg.jpg"})` }}>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Blog = () => {
     return (
-        <div className='xxl:px-[15%] xl:px-[10%] px-[6%] pb-20 bg-stone-800 text-white relative '>
+        <div className='xxl:px-[15%] xl:px-[10%] px-[6%] pb-20 bg-stone-800 text-white relative' id='blog'>
             <img className='absolute top-10 left-16' src="../images/blog/blogBg.png" alt="" />
             <img className='absolute -top-14 right-10' src="../images/blog/blogBg2.png" alt="" />
             <div className='text-center mb-20'>

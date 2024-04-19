@@ -5,6 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineMenu } from "react-icons/hi";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import { Link } from 'react-scroll'
 
 
 const Home = () => {
@@ -28,12 +29,48 @@ const Home = () => {
                     <h1 className='mr-28'>Close</h1> <FaArrowLeftLong className='mt-3.5 mr-6' />
                   </button>
                 </div>
-                <li className='mr-12'><a href="/#">Home</a></li>
-                <li className='mr-12'><a href="/#">About</a></li>
-                <li className='mr-12'><a href="/#">Portfolio</a></li>
-                <li className='mr-12'><a href="/#">Service</a></li>
-                <li className='mr-12'><a href="/#">Vlog</a></li>
-                <li className='mr-12'><a href="/#">Contact</a></li>
+                <li className='mr-12 cursor-pointer'><Link activeClass="active"
+                  to="/"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={600}
+                >Home</Link></li>
+                <li className='mr-12 cursor-pointer'><Link activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={600}
+                >About</Link></li>
+                <li className='mr-12 cursor-pointer'><Link activeClass="active"
+                  to="portfolio"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={600}
+                >Portfolio</Link></li>
+                <li className='mr-12 cursor-pointer'><Link activeClass="active"
+                  to='service'
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={600}
+                >Service</Link></li>
+                <li className='mr-12 cursor-pointer'><Link activeClass="active"
+                  to="blog"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={600}
+                >Blog</Link></li>
+                <li className='mr-12 cursor-pointer'><Link activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={600}
+                >Contact</Link></li>
                 <li>
                   <button className='bg-orange-600 px-5 py-0.5 llgg:-mt-2 rounded-3xl mt-5'>
                     <a href="../images/avatar.jpg" download >Downloade CV</a>

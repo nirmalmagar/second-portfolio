@@ -11,6 +11,7 @@ import Blog from './components/Blog';
 import BlogSubscribe from './components/BlogSubscribe';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollUpBtn from './components/ScrollUpBtn';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
       <BlogSubscribe />
       <Contact />
       <Footer />
+      <ScrollUpBtn />
     </>
   )
 }

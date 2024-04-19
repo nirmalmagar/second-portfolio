@@ -5,7 +5,7 @@ import { FaPhone } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <div className='xxl:px-[15%] xl:px-[10%] px-[6%] pb-40 bg-stone-800 text-white relative'>
+        <div className='xxl:px-[15%] xl:px-[10%] px-[6%] pb-40 bg-stone-800 text-white relative' id='contact'>
             <div className='text-center'>
                 <span className='text-lg font-semibold text-orange-600'>Contact Me</span>
                 <h1 className='text-4xl font-semibold py-5'>I Want To Hear From You</h1>

@@ -6,15 +6,15 @@ import { CgWebsite } from "react-icons/cg";
 
 const Service = () => {
     return (
-        <div className='grid-cols-2'>
+        <div className='grid-cols-2' id='service'>
             {/* <img className='absolute top-80 left-5' src="../images/service/6.png" alt="" /> */}
             <div className='relative xxl:px-60 xl:px-40 md:px-10 sm:px-8 px-4 py-40 bg-stone-800 text-white'>
                 <img className='absolute top-0 right-0 w-96 h-96' src="../images/service/5.png" alt="" />
                 <div className='text-center'>
-                    <span className='text-lg font-semibold text-orange-600'>Portfolio</span>
-                    <h1 className='text-4xl font-semibold py-5'>My Amazing Works</h1>
-                    <p className='text-[17px] text-red-100 lg:mx-auto xl:max-w-[50%]'>Most common methods
-                        for designing websites that work well on desktop is responsive and adaptive design</p>
+                    <span className='text-2xl font-semibold text-orange-600'>Services</span>
+                    <h1 className='text-4xl font-semibold py-5'>What I Do for Clients</h1>
+                    <p className='text-[17px] text-red-100 lg:mx-auto xl:max-w-[50%]'>
+                        Most common methods for designing websites that work well on desktop is responsive and adaptive design                        </p>
                 </div>
                 <div className='grid lgg:grid-cols-2 grid-cols-1 gap-4 lgg:mx-0 sm:mx-[10%] mx-1 mt-28'>
                     <div className='bg-neutral-600 hover:bg-neutral-700 duration-500 text-white py-16 rounded-2xl '>

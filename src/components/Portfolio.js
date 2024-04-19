@@ -3,7 +3,7 @@ import React from 'react'
 const Portfolio = () => {
     return (
         <>
-            <div className='relative lg:px-60 md:px-14 px-8 py-40 bg-stone-800 text-white'>
+            <div className='relative lg:px-60 md:px-14 px-8 py-40 bg-stone-800 text-white' id='portfolio'>
                 <img className='absolute top-32 left-5' src="../images/portfolio/bgSticker.png" alt="" />
                 <img className='absolute bottom-10 right-20 w-60' src="../images/portfolio/bgSticker2.png" alt="" />
                 <div className='text-center'>
