@@ -1,20 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineMenu } from "react-icons/hi";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
+
 
 
 const Home = () => {
   const [displayNavbar, setDisplayNavbar] = useState(false);  //to display navbar state
 
+  // to display navbar bg color while scrolling
+  const [displayBg, setDisplayBg] = useState(true);
+
+  const ListenScroll = () => {
+    let height = 100;
+    let heightValue = document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (height > heightValue) {
+      setDisplayBg(true);
+    }
+    else {
+      setDisplayBg(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", ListenScroll);
+    return () => window.removeEventListener("scroll", ListenScroll);
+  }, []);
+
   return (
     <>
-      <div className='xxl:px-52 xl:px-[10%] px-[6%] py-5 font-semibold text-base h-20 fixed
-       text-white w-full justify-between flex z-10'>
+      <div className={displayBg ? `xxl:px-52 xl:px-[10%] px-[6%] llgg:bg-transparent bg-black py-5 font-semibold text-base h-20 fixed
+       text-white w-full justify-between flex z-10` : `xxl:px-52 bg-gray-900 duration-500 xl:px-[10%] px-[6%] py-5 font-semibold text-base h-20 fixed
+       text-white w-full justify-between flex z-10`}>
         <img className='w-42 h-9' src="../images/dizme.png" alt="" />
         <HiOutlineMenu onClick={() => setDisplayNavbar(!displayNavbar)} className='llgg:hidden absolute right-20 h-8 -z-10 cursor-pointer w-8 flex-end' />
 
@@ -37,7 +59,7 @@ const Home = () => {
               to="about"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-100}
               duration={600}
             >About</Link></li>
             <li className='mr-12 cursor-pointer llgg:w-auto w-screen llgg:py-0 py-2'><Link activeClass="active"
@@ -65,7 +87,7 @@ const Home = () => {
               to="contact"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-90}
               duration={600}
             >Contact</Link></li>
             <li className='pb-5'>
@@ -79,70 +101,6 @@ const Home = () => {
       </div>
       <div className='lgg:bg-cover bg-center lgg:h-screen h-[145vh]' id='home' style={{ backgroundImage: `url(${"../images/homeBgImg.jpg"})` }}>
         <div className='xxl:px-[15%] xl:px-[10%] px-[6%] overflow-x-hidden pb-20 ' >
-          {/* <div className='flex justify-between py-5 fixed xxl:w-[75%] xl:w-[80%] w-[87%] z-10 bg-black'>
-          {/* <div className='flex justify-between py-5 fixed xxl:w-[100%] -ml-60 z-10 px-40 xl:w-[80%] w-[87%] bg-black'> */}
-          {/* <img className='w-42 h-9' src="../images/dizme.png" alt="" /> */}
-          {/* <img className='w-52 h-9 pl-16' src="../images/dizme.png" alt="" /> */}
-
-          {/*<HiOutlineMenu onClick={() => setDisplayNavbar(!displayNavbar)} className='absolute duration-300 right-10 text-white llgg:hidden block text-3xl cursor-pointer' />
-
-            <div className={`relative ${displayNavbar ? 'left-60' : 'left-0 duration-300'} leading-10 llgg:left-0 z-10 bg-sky-950 llgg:bg-transparent llgg:px-0 llgg:pb-0 px-10 pb-8 llgg:mr-0 -mr-20 llgg:top-0 top-0`}>
-              <ul className='llgg:flex font-semibold text-white'>
-                <div className='llgg:hidden block'>
-                  <button onClick={() => setDisplayNavbar(true)} className='bg-black -mx-10 pl-9 flex justify-between'>
-                    <h1 className='mr-28'>Close</h1> <FaArrowLeftLong className='mt-3.5 mr-6' />
-                  </button>
-                </div>
-                <li className='mr-12 cursor-pointer'><Link activeClass="active"
-                  to="home"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={600}
-                >Home</Link></li>
-                <li className='mr-12 cursor-pointer'><Link activeClass="active"
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={600}
-                >About</Link></li>
-                <li className='mr-12 cursor-pointer'><Link activeClass="active"
-                  to="portfolio"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={600}
-                >Portfolio</Link></li>
-                <li className='mr-12 cursor-pointer'><Link activeClass="active"
-                  to='service'
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={600}
-                >Service</Link></li>
-                <li className='mr-12 cursor-pointer'><Link activeClass="active"
-                  to="blog"
-                  spy={true}
-                  smooth={true}
-                  offset={-90}
-                  duration={600}
-                >Blog</Link></li>
-                <li className='mr-12 cursor-pointer'><Link activeClass="active"
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={600}
-                >Contact</Link></li>
-                <li>
-                  <button className='bg-orange-600 px-5 py-0.5 llgg:-mt-2 rounded-3xl mt-5'>
-                    <a href="../images/avatar.jpg" download >Downloade CV</a>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div> */}
 
           <div className=' lgg:flex-row lgg:text-start text-center flex-col-reverse absolute top-16 llgg:top-32 flex lg:gap-x-40 lgg:gap-x-20 gap-x-5 mt-32'>
             <div className='text-white pt-10'>
